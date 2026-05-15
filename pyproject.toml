@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "scf-tower-post-processor"
+version = "4.10.0"
+description = "Tower Post Processor allows you to run post account vend automations for control tower and enable various security services."
+authors = ["Kara esd <kara.howze@sxsd.com>"]
+[[tool.poetry.source]]
+name = "aabg"
+url = "https://internal-scf-uat:eyplUGVNdjl2RG5UM2Q2VjdHaGjQDAxZ2Z0YnQwZW5kZHhzMDZlcXRtN2YxYnR0L3VzZXJzL2ludGVybmFsLXNjZi11YXQiLCJzY3AiOiJhcHBsaWVkLXBlcm1pc3Npb25zL3VzZXIiLCJhdWQiOiIqQCoiLCJpc3MiOiJqZmZlQDAxZ2Z0YnQwZW5kZHhzMDZlcXRtN2YxYnR0IiwiaWF0IjoxNzYzOTcyMTYxLCJqdGkiOiIxZWE2ZDYwNS1jOWI1LTQ2N2ItYjA0NS1lYTBjOTk2MGZlNGMiLCJ0aWQiOiJhMHVmZThsdW1ndnZuIn0.fT7U1tl-vk2aARGwY10NMSja-AOgOnOclI3N3Q3Te3DcGbHl7-HBP1BB855H-CumAG5KGLDs3J6b23GMklL-9xL50aFnG--mn4888yNyJ20aKJ_3Xtjz9ghfvuInzEfuzYGdIOxgIqJRppNkkAgJ1zW49fKko-r5KN9aA8sxQKQiB3cfLp_zGE7YCd1UiHqK7L_c0PxqjQwIwJ5_-85lkxAGHaV69UvlQ0LxWCrKyJzcXrYD1Rw0zTwUXUO8-C8ukmnI-4AwjodwASEn_ekGzywY08nTGuigsmx3SJHNuZ6sYDqHWXDfA78dHH0dDdVEbp7G_JeoGknyz0oRhYpIUA@aabg.jfrog.io/artifactory/api/pypi/scf-pypi-dev/simple"
+priority = "supplemental"
+[tool.poetry.dependencies]
+python = "^3.11"
+aws-cdk-lib = "2.190.0"
+scf_cdk_constructs = "0.1.109"
+"aws-cdk.aws-lambda-python-alpha" = "2.130.0a0"
+cdk-nag = "^2.18.35"
+flake8 = "^7.0.0"
+black = "^23.10.0"
+marshmallow = "^3.18.0"
+ipaddress = "^1.0.23"
+boto3 = "^1.34.2"
+moto = "^5.0.16"
+python-dotenv = "^0.21.0"
+boto3-stubs = "^1.34.2"
+aws-embedded-metrics = "^3.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+requests = "^2.32.3"
+paramiko = "^3.5.0"
+coverage = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+log_cli = true
